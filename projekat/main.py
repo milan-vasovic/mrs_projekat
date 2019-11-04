@@ -1,6 +1,8 @@
 import sys
 from PySide2 import QtWidgets
+from PySide2.QtWidgets import QApplication
 from core.view.main_window import MainWindow
+
 
 def main():
     # Kreiranje aplikacije
@@ -11,6 +13,7 @@ def main():
     main_window.show()
     # Iskljucivanje interpretera zajedno sa iskljucivanjem aplikacije
     sys.exit(app.exec_())
+
 
 # Pokretanje aplikacije samo ako je pokrenut glavni modul
 if __name__ == "__main__":
